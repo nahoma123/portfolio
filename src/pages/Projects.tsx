@@ -93,8 +93,8 @@ const Projects: React.FC = () => {
   });
 
   return (
-    <div className="max-h-screen bg-gray-100 flex p-4">
-      <Card className="w-full p-6 overflow-y-auto">
+    <div className="max-h-screen bg-gray-100 flex p-2">
+      <Card className="w-full overflow-y-auto">
         <h1 className="text-3xl font-bold mb-6 font-sans ">Projects</h1>
         <Steps direction="vertical" current={-1}>
           {transitions((style, item, _, index) => (

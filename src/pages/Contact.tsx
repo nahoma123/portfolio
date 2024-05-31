@@ -4,8 +4,8 @@ import { InstagramOutlined, FacebookOutlined, GithubOutlined, MailOutlined, Yout
 
 const Contact: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex p-4">
-      <Card className="w-full h-screen p-6">
+    <div className="min-h-screen bg-gray-100 flex p-2">
+      <Card className="w-full h-screen">
         <div className="mb-8">
           <div className="flex flex-col justify-between items-center justify-center mb-4">
             <h1 className="text-3xl font-bold font-sans">Contact</h1>
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
               <Input placeholder="Email" />
               <Input placeholder="Subject" />
               <Input.TextArea placeholder="Message" autoSize={{ minRows: 4 }} />
-              <Button type="primary" block>SEND MESSAGE</Button>
+              <Button type="primary" className='w-24' block>SEND MESSAGE</Button>
             </div>
           </div>
         </div>

@@ -70,8 +70,8 @@ const Experience: React.FC = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-100 flex p-4">
-      <Card className="w-full max-w-5xl p-6">
+    <div className="min-h-screen bg-gray-100 flex p-2">
+      <Card className="w-full">
         <h1 className="text-3xl font-bold mb-6 font-sans">Work Experience</h1>
         <Steps direction="vertical" current={4}>
           {transitions((style, item, _, index) => (
