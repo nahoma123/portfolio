@@ -50,12 +50,14 @@ const Skills = () => {
   const othersProps = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 400 });
 
   const leftTransition = useTransition(skillsData[0].items, {
+    keys: (item) => item.name,
     from: { opacity: 0, transform: 'translate3d(-40px,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0,0,0)' },
     trail: 200,
   });
 
   const rightTransition = useTransition(skillsData[1].items, {
+    keys: (item) => item.name,
     from: { opacity: 0, transform: 'translate3d(40px,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0,0,0)' },
     trail: 200,
@@ -78,12 +80,12 @@ const Skills = () => {
             <h2 className="text-2xl font-semibold mb-4 flex items-center font-sans">
               {skillsData[0].icon} <span className="ml-2">{skillsData[0].category}</span>
             </h2>
-            {leftTransition((style, skill, _, index) => (
-              <animated.div key={index} style={style} className="mb-2">
-                <span className="block text-lg font-medium mb-1 font-sans">{skill.name}</span>
+            {leftTransition((style, item) => (
+              <animated.div key={item.name} style={style} className="mb-2">
+                <span className="block text-lg font-medium mb-1 font-sans">{item.name}</span>
                 <Progress
-                  percent={skill.level}
-                  strokeColor={skill.color}
+                  percent={item.level}
+                  strokeColor={item.color}
                 />
               </animated.div>
             ))}
@@ -92,12 +94,12 @@ const Skills = () => {
             <h2 className="text-2xl font-semibold mb-4 flex items-center font-sans">
               {skillsData[1].icon} <span className="ml-2">{skillsData[1].category}</span>
             </h2>
-            {rightTransition((style, skill, _, index) => (
-              <animated.div key={index} style={style} className="mb-2">
-                <span className="block text-lg font-medium mb-1 font-sans">{skill.name}</span>
+            {rightTransition((style, item) => (
+              <animated.div key={item.name} style={style} className="mb-2">
+                <span className="block text-lg font-medium mb-1 font-sans">{item.name}</span>
                 <Progress
-                  percent={skill.level}
-                  strokeColor={skill.color}
+                  percent={item.level}
+                  strokeColor={item.color}
                 />
               </animated.div>
             ))}
