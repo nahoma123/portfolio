@@ -64,8 +64,8 @@ const Skills = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-100 flex p-4">
-      <Card className="w-full max-w-5xl p-6">
+    <div className="bg-gray-100 flex p-2" style={{ height: '100vh' }}>
+      <Card className="w-full overflow-y-auto">
         <animated.h1 style={titleProps} className="text-3xl font-bold mb-6 font-sans">Skills</animated.h1>
         <animated.div style={othersProps} className="mb-8">
           <h2 className="text-2xl font-semibold mb-4 flex items-center font-sans">
@@ -75,8 +75,8 @@ const Skills = () => {
             {skillsData[2].items.join(', ')}
           </p>
         </animated.div>
-        <div className="flex justify-between">
-          <div className="w-1/2 pr-4">
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div className="w-full lg:w-1/2 lg:pr-4 mb-4 lg:mb-0">
             <h2 className="text-2xl font-semibold mb-4 flex items-center font-sans">
               {skillsData[0].icon} <span className="ml-2">{skillsData[0].category}</span>
             </h2>
@@ -90,7 +90,7 @@ const Skills = () => {
               </animated.div>
             ))}
           </div>
-          <div className="w-1/2 pl-4">
+          <div className="w-full lg:w-1/2 lg:pl-4">
             <h2 className="text-2xl font-semibold mb-4 flex items-center font-sans">
               {skillsData[1].icon} <span className="ml-2">{skillsData[1].category}</span>
             </h2>

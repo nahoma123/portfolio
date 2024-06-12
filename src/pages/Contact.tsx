@@ -12,14 +12,14 @@ const Contact: React.FC = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gray-100 flex p-2">
-      <Card className="w-full h-screen">
+    <div className="bg-gray-100 flex p-2" style={{ height: "100vh" }}>
+      <Card className="w-full">
         {transitions((style, item) => 
           item && (
             <animated.div style={style} className="mb-8">
-              <div className="flex flex-col justify-between items-center justify-center mb-4">
+              <div className="flex flex-col items-center justify-center mb-4">
                 <h1 className="text-3xl font-bold font-sans">Contact</h1>
-                <div className='flex flex-row'>
+                <div className='flex flex-wrap justify-center mt-4'>
                   <div className="flex space-x-4">
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                       <div className="flex items-center bg-white justify-center w-14 h-14 shadow-md rounded-md">
@@ -48,8 +48,8 @@ const Contact: React.FC = () => {
                     </a>
                   </div>
                 </div>
-                <div className="space-y-4 mt-6 w-1/3">
-                  <h1 className="text-md text-gray-700 font-MEDIUM font-sans">GET IN TOUCH</h1>
+                <div className="space-y-4 mt-6 w-full sm:w-3/4 md:w-2/3 lg:w-1/3 px-4">
+                  <h1 className="text-md text-gray-700 font-medium font-sans">GET IN TOUCH</h1>
                   <animated.div style={style}>
                     <Input placeholder="Name" />
                   </animated.div>
@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
                     <Input.TextArea placeholder="Message" autoSize={{ minRows: 4 }} />
                   </animated.div>
                   <animated.div style={style}>
-                    <Button type="primary" className='w-24' block>SEND MESSAGE</Button>
+                    <Button type="primary" className='w-full md:w-24' block>SEND MESSAGE</Button>
                   </animated.div>
                 </div>
               </div>

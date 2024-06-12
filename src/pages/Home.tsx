@@ -14,7 +14,7 @@ const Home: React.FC = () => {
     <div className="relative">
       <Carousel animation="slide">
         {images.map((image, index) => (
-          <div key={index} style={{ height: '90vh', width: '100vw', position: 'relative', display: 'flex', justifyContent: 'flex-end' }}>
+          <div key={index} style={{ height: '95vh', width: '100vw', position: 'relative', display: 'flex', justifyContent: 'flex-end' }}>
             <img src={image} alt={`Slide ${index}`} style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
             <div className="absolute inset-0 flex flex-col justify-center ml-8 font-sans">
               <h1 className="text-white text-4xl mb-4">Welcome to My Portfolio</h1>

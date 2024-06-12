@@ -13,9 +13,9 @@ import Projects from './pages/Projects';
 
 const App: React.FC = () => {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen bg-white">
       <Sidebar />
-      <div className="flex-1 p-4">
+      <div className="flex-1 bg-white">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
