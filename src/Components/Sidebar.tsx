@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Drawer, Button } from 'antd';
+import pfp from '../assets/photo_2024-06-12_23-41-40.jpg'
 import {
   HomeOutlined,
   InfoCircleOutlined,
@@ -83,7 +84,7 @@ const Sidebar: React.FC = () => {
           >
             <div className="flex items-center justify-center p-4">
               <img
-                src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src={pfp}
                 alt="Profile"
                 className="rounded-full h-24 w-24 object-cover"
               />
@@ -101,7 +102,7 @@ const Sidebar: React.FC = () => {
         <div className="hidden md:flex min-h-screen w-64 bg-slate-100 text-slate-50 flex-col font-sans">
           <div className="flex items-center justify-center p-4">
             <img
-              src="https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={pfp}
               alt="Profile"
               className="rounded-full h-24 w-24 object-cover"
             />
