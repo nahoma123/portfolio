@@ -26,8 +26,8 @@ const About = () => {
   });
 
   return (
-    <div className="min-h-screen w-full bg-white flex justify-start p-2">
-      <Card className="w-screen md:w-3/4 lg:w-3/4 xl:w-1/2 p-6">
+    <div className="min-h-screen w-full bg-white flex justify-center p-2">
+      <div className="w-screen md:w-4/5 lg:w-4/5 xl:w-1/2 p-6">
         <h1 className="text-3xl font-bold mb-4 text-start">About Me</h1>
         <p className="mb-4 text-justify">
           5+ years of professional programming experience, became a Lead developer, and later a senior
@@ -54,7 +54,7 @@ const About = () => {
         </Card>
         <h2 className="text-2xl font-bold mt-6 mb-4 text-center">Yearly Contribution Activity</h2>
         <GitHubCalendar username="nahoma123" />
-      </Card>
+      </div>
     </div>
   );
 };
