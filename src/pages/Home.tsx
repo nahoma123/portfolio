@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
+import Resume from '../assets/Resume.pdf'
 
 const Home: React.FC = () => {
   const images = [
@@ -19,7 +20,7 @@ const Home: React.FC = () => {
             <div className="absolute inset-0 flex flex-col justify-center ml-8 font-sans">
               <h1 className="text-white text-4xl mb-4">Welcome to My Portfolio</h1>
               <div>
-                <Button size="large" href="/path/to/resume.pdf" download className='font-sans' icon={<DownloadOutlined />}>
+                <Button size="large" href={Resume} download className='font-sans' icon={<DownloadOutlined />}>
                     Download Resume
                 </Button>
               </div>

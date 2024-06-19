@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Input, Button } from 'antd';
 import { InstagramOutlined, FacebookOutlined, GithubOutlined, MailOutlined, YoutubeOutlined } from '@ant-design/icons';
+import { FaTelegramPlane } from 'react-icons/fa';
 import { useTransition, animated } from '@react-spring/web';
 
 const Contact: React.FC = () => {
@@ -31,12 +32,12 @@ const Contact: React.FC = () => {
                         <FacebookOutlined style={{ color: '#1877F2', fontSize: '24px' }} />
                       </div>
                     </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/nahoma123" target="_blank" rel="noopener noreferrer">
                       <div className="flex items-center bg-white justify-center w-14 h-14 shadow-md rounded-md">
                         <GithubOutlined style={{ color: '#333', fontSize: '24px' }} />
                       </div>
                     </a>
-                    <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:nahomasnake12@gmail.com" target="_blank" rel="noopener noreferrer">
                       <div className="flex items-center bg-white justify-center w-14 h-14 shadow-md rounded-md">
                         <MailOutlined style={{ color: '#D44638', fontSize: '24px' }} />
                       </div>
@@ -44,6 +45,11 @@ const Contact: React.FC = () => {
                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                       <div className="flex items-center bg-white justify-center w-14 h-14 shadow-md rounded-md">
                         <YoutubeOutlined style={{ color: '#FF0000', fontSize: '24px' }} />
+                      </div>
+                    </a>
+                    <a href="https://t.me/nahomasnake" target="_blank" rel="noopener noreferrer">
+                      <div className="flex items-center bg-white justify-center w-14 h-14 shadow-md rounded-md">
+                        <FaTelegramPlane style={{ color: '#0088cc', fontSize: '24px' }} />
                       </div>
                     </a>
                   </div>

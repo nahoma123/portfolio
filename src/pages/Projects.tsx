@@ -95,7 +95,7 @@ const Projects: React.FC = () => {
   return (
     <div className="bg-gray-100 flex p-2" style={{ height:"100vh" }} >
       <Card className="w-full overflow-y-auto">
-        <h1 className="text-3xl font-bold mb-6 font-sans ">Projects</h1>
+        <h1 className="text-3xl font-bold mb-6 font-sans ">Major Projects</h1>
         <Steps direction="vertical" current={-1}>
           {transitions((style, item, _, index) => (
             <Step
